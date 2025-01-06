@@ -3,11 +3,12 @@ package Projeto;
 import java.util.Scanner;
 
 public class MainCalculo {
+	 
 	public static float Calculo(float NumDeHoras, float ValorRecebido) {
 		float Salario = NumDeHoras * ValorRecebido;
 		return (Salario);
 	}
-
+	
 	public static float HorariosFeitos(int i, float HorasT) {
 		Scanner leitura = new Scanner(System.in);
 		System.out.println("Digite o horario que o funcionario inicio o expediente do " + (i + 1) + " dia :");
@@ -45,5 +46,6 @@ public class MainCalculo {
 		}
 		float SalarioTotal = Calculo(HorasTrabalhadas, PrecoPorHora);
 		System.out.println("O salario total e de: "+SalarioTotal);
+		 
 	}
 }
